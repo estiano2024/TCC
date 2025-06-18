@@ -13,7 +13,7 @@ header {
 }
 
 input, select {
-    width: calc(100% - 20px);
+    width: calc(80% - 20px);
     padding: 8px;
     margin: 10px 0;
     display: block;
@@ -26,14 +26,8 @@ input, select {
     padding: 8px;
     display: flex;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f68046;
-    
-    
-
-   
-    
-
 }
 
 h2, h3 {
@@ -43,4 +37,9 @@ h2, h3 {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+#pesquisa-livro{
+    position: relative;
+    padding-right: 100px;
 }

@@ -17,4 +17,3 @@ function enviarSugestao() {
     alert('Sugestão enviada!');
 }
 
-console.log()
