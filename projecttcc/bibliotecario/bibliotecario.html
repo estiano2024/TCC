@@ -9,35 +9,21 @@
 </head>
 
 <body>
-    <section id="area-bibliotecario">
-        <h2>Área do Bibliotecário</h2>
-        <div id="catalogar-livro">
-            <h3>Catalogar Livro</h3>
-            <input type="text" id="isbn" placeholder="ISBN">
-            <button onclick="catalogarLivro()">Buscar e Adicionar</button>
-        </div>
-        <div id="livros-catalogados">
-            <h3>Livros Catalogados</h3>
-            <ul id="lista-catalogados"></ul>
-        </div>
-        <div id="controle-emprestimos">
-            <h3>Controle de Empréstimos</h3>
-            <ul id="lista-controle"></ul>
-        </div>
-        <div id="registro-emprestimos">
-            <h3>Registrar Empréstimos</h3>
-            <input type="text" id="aluno-nome-emprestimo" placeholder="Nome do Aluno">
-            <select id="aluno-serie-emprestimo">
-                <option value="1">1º Ano</option>
-                <option value="2">2º Ano</option>
-                <option value="3">3º Ano</option>
-            </select>
-            <input type="text" id="livro-emprestado" placeholder="Nome do Livro">
-            <button onclick="registrarEmprestimo()">Registrar</button>
-        </div>
-    </section>
+  <header>
+    <input type="text" placeholder="Pesquisar..." class="search-bar" />
+    <button class="search-btn">🔍</button>
 
-    <script src="bibli.js"></script>
+    <div class="profile">
+      <img src="https://via.placeholder.com/32" alt="Perfil" />
+      <span>Bibliotecario(a)</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <div class="card">Catalogar livro</div>
+    <div class="card">Controle de empréstimo</div>
+    <div class="card">Livros catalogados</div>
+    <div class="card">Registro de empréstimo</div>
+  </main>
 </body>
-
 </html>

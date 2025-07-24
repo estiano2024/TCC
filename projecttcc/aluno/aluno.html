@@ -9,39 +9,30 @@
 
 </head>
 
-<body>
-    <div id="buscarlivro"> 
-
-        <input type="text" id="pesquisa-livro" placeholder="Pesquisar livro">
-        <button onclick="pesquisarLivro()">Buscar</button>
-
+  <header>
+    <input type="text" placeholder="Título, gênero do livro..." class="search-bar" />
+    <button class="search-btn">🔍</button>
+    <div class="profile">
+      <img src="https://via.placeholder.com/32" alt="Perfil" />
+      <span>Nome do aluno</span>
+      <span class="arrow">▼</span>
     </div>
-        <h2>Área do Estudante</h2>
-        <div id="livros-disponiveis">
-            <h3>Livros Disponíveis</h3>
-            <div id="lista-livros"></div>
-        </div>
-        
-        <div id="historico-emprestimos">
-            <h3>Histórico de Empréstimos</h3>
-            <ul id="lista-emprestimos"></ul>
-        </div>
+  </header>
 
-        <div id="sugestoes">
-            <h3>Sugestão de Livros</h3>
-            <input type="text" id="sugestao-livro" placeholder="Digite sua sugestão">
-            <button onclick="enviarSugestao()">Enviar</button>
-        </div>
-
-        
-        
-    
-
-    
-
-    <script src="al.js"></script>
-    
-
+  <main class="grid">
+    <div class="card">
+      <span>📖</span>
+      <p>Livros disponíveis</p>
+    </div>
+    <div class="card">
+      <span>📦</span>
+      <p>Sugestão de livros</p>
+    </div>
+    <div class="card">
+      <span>📚</span>
+      <p>Histórico de livros</p>
+    </div>
+    <div class="card empty"></div>
+  </main>
 </body>
-
 </html>
