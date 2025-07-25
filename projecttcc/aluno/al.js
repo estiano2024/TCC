@@ -15,5 +15,4 @@ function enviarSugestao() {
     sugestoes.push(sugestao);
     localStorage.setItem('sugestoes', JSON.stringify(sugestoes));
     alert('Sugestão enviada!');
-}
-
+} 
