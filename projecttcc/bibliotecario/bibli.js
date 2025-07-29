@@ -1,8 +1,8 @@
 function catalogarLivro() {
-    let isbn = document.getElementById('isbn').value;
+    let codigo = document.getElementById('codigo').value;
     let livros = JSON.parse(localStorage.getItem('livros')) || [];
     
-    let livro = { isbn, titulo: 'Livro Exemplo', autor: 'Autor Desconhecido' };
+    let livro = { codigo, titulo: 'Livro Exemplo', autor: 'Autor Desconhecido' };
     livros.push(livro);
     localStorage.setItem('livros', JSON.stringify(livros));
     alert('Livro catalogado!');

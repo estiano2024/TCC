@@ -82,4 +82,4 @@ def bibliotecario():
     return render_template('bibliotecario.html', livros=livros)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 
