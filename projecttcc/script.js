@@ -50,7 +50,6 @@ function loginBibliotecario() {
     
 }
 
-console.log()
 
 function mostrarLogin(tipo) {
     // Oculta todos os formulários primeiro

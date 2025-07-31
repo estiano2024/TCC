@@ -1,12 +1,6 @@
-function catalogarLivro() {
-    let codigo = document.getElementById('codigo').value;
-    let livros = JSON.parse(localStorage.getItem('livros')) || [];
-    
-    let livro = { codigo, titulo: 'Livro Exemplo', autor: 'Autor Desconhecido' };
-    livros.push(livro);
-    localStorage.setItem('livros', JSON.stringify(livros));
-    alert('Livro catalogado!');
-    exibirLivros();
+function catalogarLivros() {
+
+    window.location.href = "catalogar\catalogar.html";
 }
 
 function registrarEmprestimo() {
@@ -22,5 +16,3 @@ function registrarEmprestimo() {
     localStorage.setItem('emprestimos', JSON.stringify(emprestimos));
     alert('Empréstimo registrado!');
 }
-
-console.log()
